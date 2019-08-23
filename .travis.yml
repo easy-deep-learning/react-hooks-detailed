@@ -7,4 +7,13 @@ cache:
 script:
   - yarn
   - yarn test
+  - yarn test:coverage
   - yarn run build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $github_token
+  local_dir: build
+  on:
+    branch: master
