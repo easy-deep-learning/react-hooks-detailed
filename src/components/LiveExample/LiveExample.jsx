@@ -8,7 +8,7 @@ import {
 
 function LiveExample (props) {
   return (
-      <LiveProvider code={props.code}>
+      <LiveProvider code={props.code} scope={props.scope}>
         <LiveEditor />
         <LiveError />
         <LivePreview />
