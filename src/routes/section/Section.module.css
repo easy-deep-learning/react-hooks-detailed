@@ -1,0 +1,15 @@
+.section {
+  padding: 0 16px;
+}
+
+.section__id {
+  color: gray;
+}
+
+.section__columns {
+  display: flex;
+}
+
+.section__column {
+  width: 50%;
+}
